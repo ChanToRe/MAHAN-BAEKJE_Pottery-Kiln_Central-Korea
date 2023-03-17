@@ -6,10 +6,11 @@ library(ggplot2)
 library(dplyr)
 
 ### 데이터 전처리 ###
-df <- read.csv('/Users/jch/Documents/github/P3K-HB_Pottery-Kiln/DO_Master.csv')
+df <- read.csv('/Users/jch/Desktop/DO_Master(0317).csv')
 df <- distinct(df) #공반유물 확인으로 변환
 df <- na.omit(df) #결측치 제거
-
+df <- df[, -1]
+df <- df[, -2]
 ### 2-mode Network ###
 df %>%
   as_tbl_graph() %>%
