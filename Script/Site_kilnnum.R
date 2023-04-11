@@ -1,6 +1,6 @@
 library(ggplot2)
 
-df <- read.csv("~/Desktop/Site_kilnnum.csv")
+df <- read.csv("/Users/jch/Documents/github/P3K-HB_Pottery-Kiln/Data/Site_kilnnum.csv")
 df <- na.omit(df)
 
 ggplot() +
