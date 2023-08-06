@@ -69,8 +69,10 @@ Matrix products: default
 
 
 locale:
-[1] LC_COLLATE=Korean_Korea.utf8  LC_CTYPE=Korean_Korea.utf8
-[3] LC_MONETARY=Korean_Korea.utf8 LC_NUMERIC=C
+[1] LC_COLLATE=Korean_Korea.utf8  LC_CTYPE=Korean_Korea.utf8 
+
+[3] LC_MONETARY=Korean_Korea.utf8 LC_NUMERIC=C               
+
 [5] LC_TIME=Korean_Korea.utf8
 
 time zone: Asia/Seoul
@@ -83,28 +85,28 @@ attached base packages:
 other attached packages:
  [1] lubridate_1.9.2 forcats_1.0.0   stringr_1.5.0   dplyr_1.1.2
  [5] purrr_1.0.1     readr_2.1.4     tidyr_1.3.0     tibble_3.2.1
- [9] tidyverse_2.0.0 ggrepel_0.9.3   gridExtra_2.3   car_3.1-2
+ [9] tidyverse_2.0.0 ggalt_0.4.0     patchwork_1.1.2 car_3.1-2
 [13] carData_3.0-5   ggbiplot_0.55   scales_1.2.1    plyr_1.8.8
-[17] devtools_2.4.5  usethis_2.2.2   httr_1.4.6      ggalt_0.4.0
-[21] patchwork_1.1.2 showtext_0.9-6  showtextdb_3.0  sysfonts_0.8.8
-[25] ggplot2_3.4.2
+[17] devtools_2.4.5  usethis_2.2.2   httr_1.4.6      showtext_0.9-6
+[21] showtextdb_3.0  sysfonts_0.8.8  here_1.0.1      ggplot2_3.4.2
 
 loaded via a namespace (and not attached):
- [1] gtable_0.3.3       htmlwidgets_1.6.2  remotes_2.4.2.1    processx_3.8.2    
- [5] tzdb_0.4.0         callr_3.7.3        vctrs_0.6.3        tools_4.3.1       
- [9] ps_1.7.5           generics_0.1.3     fansi_1.0.4        pkgconfig_2.0.3   
-[13] KernSmooth_2.23-21 RColorBrewer_1.1-3 lifecycle_1.0.3    compiler_4.3.1    
-[17] munsell_0.5.0      proj4_1.0-12       ash_1.0-15         httpuv_1.6.11     
-[21] htmltools_0.5.5    maps_3.4.1         Rttf2pt1_1.3.12    later_1.3.1       
-[25] pillar_1.9.0       crayon_1.5.2       urlchecker_1.0.1   extrafontdb_1.0   
-[29] MASS_7.3-60        ellipsis_0.3.2     cachem_1.0.8       sessioninfo_1.2.2 
-[33] abind_1.4-5        mime_0.12          tidyselect_1.2.0   digest_0.6.33     
-[37] stringi_1.7.12     extrafont_0.19     fastmap_1.1.1      colorspace_2.1-0  
-[41] cli_3.6.1          magrittr_2.0.3     pkgbuild_1.4.2     utf8_1.2.3        
-[45] withr_2.5.0        prettyunits_1.1.1  promises_1.2.0.1   timechange_0.2.0  
-[49] hms_1.1.3          memoise_2.0.1      shiny_1.7.4.1      miniUI_0.1.1.1    
-[53] profvis_0.3.8      rlang_1.1.1        Rcpp_1.0.11        xtable_1.8-4      
-[57] glue_1.6.2         pkgload_1.3.2.1    R6_2.5.1           fs_1.6.3
+ [1] gtable_0.3.3       htmlwidgets_1.6.2  remotes_2.4.2.1    processx_3.8.2
+ [5] tzdb_0.4.0         callr_3.7.3        vctrs_0.6.3        tools_4.3.1
+ [9] ps_1.7.5           generics_0.1.3     fansi_1.0.4        pkgconfig_2.0.3
+[13] KernSmooth_2.23-21 RColorBrewer_1.1-3 lifecycle_1.0.3    compiler_4.3.1
+[17] proj4_1.0-12       munsell_0.5.0      ash_1.0-15         httpuv_1.6.11
+[21] htmltools_0.5.5    maps_3.4.1         Rttf2pt1_1.3.12    extrafontdb_1.0
+[25] later_1.3.1        pillar_1.9.0       crayon_1.5.2       urlchecker_1.0.1
+[29] MASS_7.3-60        ellipsis_0.3.2     cachem_1.0.8       sessioninfo_1.2.2
+[33] abind_1.4-5        mime_0.12          tidyselect_1.2.0   digest_0.6.33
+[37] stringi_1.7.12     extrafont_0.19     rprojroot_2.0.3    fastmap_1.1.1
+[41] colorspace_2.1-0   cli_3.6.1          magrittr_2.0.3     pkgbuild_1.4.2
+[45] utf8_1.2.3         withr_2.5.0        prettyunits_1.1.1  promises_1.2.0.1
+[49] timechange_0.2.0   hms_1.1.3          memoise_2.0.1      shiny_1.7.4.1
+[53] miniUI_0.1.1.1     profvis_0.3.8      rlang_1.1.1        Rcpp_1.0.11
+[57] xtable_1.8-4       glue_1.6.2         pkgload_1.3.2.1    jsonlite_1.8.7
+[61] R6_2.5.1           fs_1.6.3
 ```
 
 대부분의 패키지는 `install.packages()` 명령어를 통해 설치할 수 있습니다. 다만, `ggbiplot` 패키지의 경우 `devtools` 패키지를 설치한 후, 아래의 명령어를 통해 설치할 수 있습니다.
