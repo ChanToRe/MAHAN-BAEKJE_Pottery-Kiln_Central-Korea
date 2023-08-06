@@ -1,6 +1,5 @@
-<img src="https://user-images.githubusercontent.com/64909586/186408061-58a88e85-be08-47f2-b3b3-2c9e04a9dec6.png" height=70>
-
-<img src="https://github.com/ChanToRe/RCDB/assets/64909586/d30fb665-14a7-4290-9ab3-7dba9345fe71" height=70>
+<img src="https://user-images.githubusercontent.com/64909586/186408061-58a88e85-be08-47f2-b3b3-2c9e04a9dec6.png" height=50>
+<img src="https://github.com/ChanToRe/RCDB/assets/64909586/d30fb665-14a7-4290-9ab3-7dba9345fe71" height=50>
 
 # 중부지역 마한・백제 대옹 소성 가마의 생산과 유통
 
