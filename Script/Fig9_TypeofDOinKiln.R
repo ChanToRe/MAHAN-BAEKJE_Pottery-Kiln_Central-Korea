@@ -1,6 +1,13 @@
 library(ggplot2)
+library(here)
+library(showtext)
+library(sysfonts)
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/DO_in_Kiln.csv")
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
+
+df <- read.csv(here("./Data/DO_in_Kiln.csv"))
 df <- na.omit(df)
 df_A <- subset(df, 권역 == "A")
 df_B <- subset(df, 권역 == "B")
@@ -34,7 +41,7 @@ ggplot() +
   scale_x_discrete(limits=c("대옹(원통형)", "대옹(기타)", "대옹편")) +
   scale_fill_grey(start=0.1, end=0.5)
 
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_9.png", dpi=150, width=5, height=5, units='in')
+ggsave(here("./Graph/Fig_9.png"), dpi=150, width=5, height=5, units='in')
 
 #A권역 Stack
 ggplot() +

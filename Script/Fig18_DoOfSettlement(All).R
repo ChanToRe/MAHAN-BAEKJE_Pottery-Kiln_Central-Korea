@@ -1,16 +1,14 @@
 library(ggplot2)
 library(showtext)
-library(gridExtra)
-library(showtext)
-library(ggrepel)
 library(sysfonts)
 library(tidyverse)
+library(here)
 
-font_add_google('Nanum Gothic', family='NanumGothic')
-showtext_auto()
-par(family="NanumGothic")
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/DO_in_Settle.csv", fileEncoding="euc-kr")
+df <- read.csv(here("./Data/DO_in_Settle.csv"), fileEncoding="euc-kr")
 
 df <- df[!(df$유역 == ""), ]
 df <- df[!(df$유구성격 == ""), ]
@@ -51,4 +49,4 @@ ggplot(all_pie, aes(x='', y=value, fill=Type)) +
         plot.title = element_text(vjust = -5, hjust=0.5),
         title = element_text(size=20),
         legend.text = element_text(size=11, color="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_18.png", dpi=150, width=5, height=5, units='in')
+ggsave(here("./Graph/Fig_18.png"), dpi=150, width=5, height=5, units='in')

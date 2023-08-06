@@ -3,9 +3,16 @@ library(devtools)
 library(ggplot2)
 library(ggbiplot)
 library(car)
+library(here)
+library(showtext)
+library(sysfonts)
+
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
 
 #Data processing
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/Original_Size_Of_DO.csv")
+df <- read.csv(here("./Data/Original_Size_Of_DO.csv"))
 df <- df[1:13]
 df <- na.omit(df)
 df <- df[!(df$Type == "기타" ), ]
@@ -53,4 +60,4 @@ ggbiplot(prcomp_df,
         legend.background = element_rect(size=0.1, colour="black"),
         legend.margin = margin(10, 20, 10, 10))
 
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_10.png", dpi=150, width=6, height=6, units='in')
+ggsave(here("./Graph/Fig_10.png"), dpi=150, width=6, height=6, units='in')

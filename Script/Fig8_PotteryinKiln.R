@@ -1,6 +1,13 @@
 library(ggplot2)
+library(here)
+library(showtext)
+library(sysfonts)
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/Pottery_in_Kiln.csv")
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
+
+df <- read.csv("./Data/Pottery_in_Kiln.csv")
 df <- na.omit(df)
 df_A <- subset(df, 권역 == "A")
 df_B <- subset(df, 권역 == "B")
@@ -15,7 +22,7 @@ ggplot() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         plot.title = element_text(hjust = 0.5)) +
   scale_fill_grey(start=0.1, end=0.5)
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_8.png", dpi=150, width=7, height=4, units='in')
+ggsave(here("./Graph/Fig_8.png"), dpi=150, width=7, height=4, units='in')
 
 #A권역 Stack
 ggplot() +

@@ -1,8 +1,13 @@
 library(ggplot2)
+library(here)
 library(showtext)
-library(gridExtra)
+library(sysfonts)
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/Size_Of_Kiln.csv")
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
+
+df <- read.csv(here("./Data/Size_Of_Kiln.csv"))
 
 #Data Processing
 df <- df[!(df$형식 == "?"), ]
@@ -32,7 +37,7 @@ ggplot(A_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_7-1.png", dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_7-1.png"), dpi=150, width=4, height=4, units='in')
 
 #B권역 원 그래프
 ggplot(B_pie, aes(x='', y=value, fill=Type)) +
@@ -47,4 +52,4 @@ ggplot(B_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_7-2.png", dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_7-2.png"), dpi=150, width=4, height=4, units='in')

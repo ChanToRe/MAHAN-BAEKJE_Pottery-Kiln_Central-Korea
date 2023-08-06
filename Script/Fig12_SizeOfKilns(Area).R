@@ -1,12 +1,15 @@
 library(ggplot2)
-library(showtext)
 library(patchwork)
 library(ggalt)
+library(here)
+library(showtext)
+library(sysfonts)
 
-#font_add_google("NanumGothic", family=NG)
-showtext_auto()
+#font_add_google('Nanum Gothic', family='NanumGothic')
+#showtext_auto()
+#par(family="NanumGothic")
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/Size_Of_Kiln.csv")
+df <- read.csv(here("./Data/Size_Of_Kiln.csv"))
 df <- na.omit(df)
 
 ggplot(data = df,
@@ -31,4 +34,4 @@ theme(legend.position = c(0.1, 0.750),
       )
 
 
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_12.png", dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_12.png"), dpi=150, width=8, height=3, units='in')

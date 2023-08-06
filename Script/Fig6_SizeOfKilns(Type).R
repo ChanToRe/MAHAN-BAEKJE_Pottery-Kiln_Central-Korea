@@ -1,12 +1,13 @@
 library(ggplot2)
+library(here)
 library(showtext)
-library(patchwork)
-library(ggalt)
+library(sysfonts)
 
-#font_add_google("NanumGothic", family=NG)
+#font_add_google('Nanum Gothic', family='NanumGothic')
 #showtext_auto()
+#par(family="NanumGothic")
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/Size_Of_Kiln.csv")
+df <- read.csv(here('./Data/Size_Of_Kiln.csv'))
 df <- na.omit(df)
 
 ggplot(data = df,
@@ -30,4 +31,4 @@ ggplot(data = df,
       axis.text = element_text(size=15, colour="black")
       )
 
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_6.png", dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_6.png"), dpi=150, width=8, height=3, units='in')

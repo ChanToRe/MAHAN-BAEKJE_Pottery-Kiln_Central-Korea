@@ -1,15 +1,14 @@
 library(ggplot2)
 library(showtext)
-library(gridExtra)
-library(showtext)
-library(ggrepel)
 library(sysfonts)
 library(tidyverse)
+library(here)
+
 #font_add_google('Nanum Gothic', family='NanumGothic')
 #showtext_auto()
 #par(family="NanumGothic")
 
-df <- read.csv("C:/github/P3K-HB_Pottery-Kiln/Data/DO_in_Settle.csv", fileEncoding="euc-kr")
+df <- read.csv(here("./Data/DO_in_Settle.csv"), fileEncoding="euc-kr")
 
 df <- df[!(df$유역 == ""), ]
 df <- df[!(df$유구성격 == ""), ]
@@ -96,7 +95,7 @@ ggplot(A_pie, aes(x=Type, y=percent, fill=Type)) +
         plot.title = element_text(vjust = -10, hjust=0.1, size=18),
         legend.position = "none",
         axis.text = element_text(size=18, colour="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_20-1.png", dpi=150, width=3, height=6, units='in')
+ggsave(here("./Graph/Fig_20-1.png"), dpi=150, width=3, height=6, units='in')
 
 #한강중류 막대그래프
 ggplot(B_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -116,7 +115,7 @@ ggplot(B_pie, aes(x=Type, y=percent, fill=Type)) +
         plot.title = element_text(vjust = -10, hjust=0.1, size=18),
         legend.position = "none",
         axis.text = element_text(size=18, colour="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_20-2.png", dpi=150, width=3, height=6, units='in')
+ggsave(here("./Graph/Fig_20-2.png"), dpi=150, width=3, height=6, units='in')
 
 #임진·한탄강+경기북부 막대그래프
 ggplot(C_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -136,7 +135,7 @@ ggplot(C_pie, aes(x=Type, y=percent, fill=Type)) +
         plot.title = element_text(vjust = -10, hjust=0.1, size=18),
         legend.position = "none",
         axis.text = element_text(size=18, colour="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_20-3.png", dpi=150, width=3, height=6, units='in')
+ggsave(here("./Graph/Fig_20-3.png"), dpi=150, width=3, height=6, units='in')
 
 #경기남부 막대그래프
 ggplot(D_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -156,7 +155,7 @@ ggplot(D_pie, aes(x=Type, y=percent, fill=Type)) +
         plot.title = element_text(vjust = -10, hjust=0.1, size=18),
         legend.position = "none",
         axis.text = element_text(size=18, colour="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_20-4.png", dpi=150, width=3, height=6, units='in')
+ggsave(here("./Graph/Fig_20-4.png"), dpi=150, width=3, height=6, units='in')
 
 #북한강·남한강 막대그래프
 ggplot(E_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -176,4 +175,4 @@ ggplot(E_pie, aes(x=Type, y=percent, fill=Type)) +
         plot.title = element_text(vjust = -10, hjust=0.1, size=18),
         legend.position = "none",
         axis.text = element_text(size=18, colour="black"))
-ggsave("C:/github/P3K-HB_Pottery-Kiln/Graph/Fig_20-5.png", dpi=200, width=3, height=6, units='in')
+ggsave(here("/Graph/Fig_20-5.png"), dpi=200, width=3, height=6, units='in')
