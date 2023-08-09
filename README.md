@@ -26,32 +26,32 @@
  ┃ ┣ 📜Site_Coordinate.csv
  ┃ ┗ 📜Size_Of_Kiln.csv
  ┣ 📂Graph
+ ┃ ┣ 📜Fig_3-1.png
+ ┃ ┣ 📜Fig_3-2.png
+ ┃ ┣ 📜Fig_4.png
+ ┃ ┣ 📜Fig_6.png
+ ┃ ┣ 📜Fig_7.png
+ ┃ ┣ 📜Fig_8.png
  ┃ ┣ 📜Fig_10.png
+ ┃ ┣ 📜Fig_11.png
  ┃ ┣ 📜Fig_12.png
  ┃ ┣ 📜Fig_13.png
- ┃ ┣ 📜Fig_14.png
- ┃ ┣ 📜Fig_15.png
- ┃ ┣ 📜Fig_18.png
- ┃ ┣ 📜Fig_20-1.png
- ┃ ┣ 📜Fig_20-2.png
- ┃ ┣ 📜Fig_20-3.png
- ┃ ┣ 📜Fig_20-4.png
- ┃ ┣ 📜Fig_20-5.png
- ┃ ┣ 📜Fig_6.png
- ┃ ┣ 📜Fig_7-1.png
- ┃ ┣ 📜Fig_7-2.png
- ┃ ┣ 📜Fig_8.png
- ┃ ┗ 📜Fig_9.png
+ ┃ ┣ 📜Fig_17.png
+ ┃ ┣ 📜Fig_19-1.png
+ ┃ ┣ 📜Fig_19-2.png
+ ┃ ┣ 📜Fig_19-3.png
+ ┃ ┣ 📜Fig_19-4.png
+ ┃ ┗ 📜Fig_19-5.png
  ┣ 📂Script
- ┃ ┣ 📜Fig10_PCAOfDO.R
- ┃ ┣ 📜Fig12_SizeOfKilns(Area).R
- ┃ ┣ 📜Fig13_NumofDOKiln.R
- ┃ ┣ 📜Fig18_DoOfSettlement(All).R
- ┃ ┣ 📜Fig20_DoOfSettlement(Area).R
- ┃ ┣ 📜Fig6_SizeOfKilns(Type).R
- ┃ ┣ 📜Fig7_TypeOfKiln(Area).R
- ┃ ┣ 📜Fig8_PotteryinKiln.R
- ┃ ┗ 📜Fig9_TypeofDOinKiln.R
+ ┃ ┣ 📜Fig3_TypeOfKiln(Area).R
+ ┃ ┣ 📜Fig4_SizeOfKilns(Type).R
+ ┃ ┣ 📜Fig6_PotteryinKiln.R
+ ┃ ┣ 📜Fig7_TypeofDOinKiln.R
+ ┃ ┣ 📜Fig8_PCAOfDO.R
+ ┃ ┣ 📜Fig10_SizeOfKilns(Area).R
+ ┃ ┣ 📜Fig11_NumofDOKiln.R
+ ┃ ┣ 📜Fig17_DoOfSettlement(All).R
+ ┃ ┗ 📜Fig19_DoOfSettlement(Area).R
  ┣ 📜.gitignore
  ┗ 📜README.md
  ```
