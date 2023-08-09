@@ -41,7 +41,7 @@ ggplot() +
   scale_x_discrete(limits=c("대옹(원통형)", "대옹(기타)", "대옹편")) +
   scale_fill_grey(start=0.1, end=0.5)
 
-ggsave(here("./Graph/Fig_9.png"), dpi=150, width=5, height=5, units='in')
+ggsave(here("./Graph/Fig_7.png"), dpi=150, width=5, height=5, units='in')
 
 #A권역 Stack
 ggplot() +

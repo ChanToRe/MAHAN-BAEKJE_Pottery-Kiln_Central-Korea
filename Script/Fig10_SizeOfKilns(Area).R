@@ -34,4 +34,4 @@ theme(legend.position = c(0.1, 0.750),
       )
 
 
-ggsave(here("./Graph/Fig_12.png"), dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_10.png"), dpi=150, width=8, height=3, units='in')

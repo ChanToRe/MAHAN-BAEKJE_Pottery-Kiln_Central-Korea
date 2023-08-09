@@ -31,4 +31,4 @@ ggplot(data = df,
       axis.text = element_text(size=15, colour="black")
       )
 
-ggsave(here("./Graph/Fig_6.png"), dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_4.png"), dpi=150, width=8, height=3, units='in')

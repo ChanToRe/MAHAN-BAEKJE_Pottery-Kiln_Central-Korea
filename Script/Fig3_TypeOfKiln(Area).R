@@ -20,11 +20,12 @@ A_pie <- data.frame(
   percent = c(round(prop.table((table(A_df$형식)))*100))
 )
 B_pie <- data.frame(
-  Type = c("⓵", "⓶", "⓷"),
-  value = c(length(which(B_df$형식 == "⓵")), length(which(B_df$형식 == "⓶")), length(which(B_df$형식 == "⓷"))),
-  percent = c(round(prop.table((table(B_df$형식)))*100))
+  Type = c("⓵", "⓷"),
+  value = c(length(which(B_df$형식 == "⓵")), length(which(B_df$형식 == "⓷"))),
+  percent = c(88, 12)
+  #percent = c(round(prop.table((table(B_df$형식)))*100))
 )
-
+a <- c(round(prop.table((table(B_df$형식)))*100))
 #A권역 원 그래프
 ggplot(A_pie, aes(x='', y=value, fill=Type)) +
   geom_bar(stat='identity') +
@@ -37,7 +38,7 @@ ggplot(A_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave(here("./Graph/Fig_7-1.png"), dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_3-1.png"), dpi=150, width=4, height=4, units='in')
 
 #B권역 원 그래프
 ggplot(B_pie, aes(x='', y=value, fill=Type)) +
@@ -52,4 +53,4 @@ ggplot(B_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave(here("./Graph/Fig_7-2.png"), dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_3-2.png"), dpi=150, width=4, height=4, units='in')

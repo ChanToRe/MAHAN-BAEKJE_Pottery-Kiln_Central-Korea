@@ -60,4 +60,4 @@ ggbiplot(prcomp_df,
         legend.background = element_rect(size=0.1, colour="black"),
         legend.margin = margin(10, 20, 10, 10))
 
-ggsave(here("./Graph/Fig_10.png"), dpi=150, width=6, height=6, units='in')
+ggsave(here("./Graph/Fig_8.png"), dpi=150, width=6, height=6, units='in')

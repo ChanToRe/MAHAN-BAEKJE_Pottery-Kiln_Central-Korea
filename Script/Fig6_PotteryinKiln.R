@@ -22,7 +22,7 @@ ggplot() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         plot.title = element_text(hjust = 0.5)) +
   scale_fill_grey(start=0.1, end=0.5)
-ggsave(here("./Graph/Fig_8.png"), dpi=150, width=7, height=4, units='in')
+ggsave(here("./Graph/Fig_6.png"), dpi=150, width=7, height=4, units='in')
 
 #A권역 Stack
 ggplot() +
