@@ -49,4 +49,4 @@ ggplot(all_pie, aes(x='', y=value, fill=Type)) +
         plot.title = element_text(vjust = -5, hjust=0.5),
         title = element_text(size=20),
         legend.text = element_text(size=11, color="black"))
-ggsave(here("./Graph/Fig_17.png"), dpi=150, width=5, height=5, units='in')
+ggsave(here("./Graph/Fig_15.png"), dpi=150, width=5, height=5, units='in')

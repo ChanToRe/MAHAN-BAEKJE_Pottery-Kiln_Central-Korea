@@ -18,4 +18,4 @@ ggplot() +
   labs(x="대옹출토 가마 수", y="유적 수") +
   scale_y_continuous(limits = c(0, 15), breaks=seq(0, 15, 1), labels=scales::number) +
   scale_x_continuous(breaks=c(0, 1, 2, 3, 4, 5, 6), labels=c("0", "1", "2", "3", "4", "5", "6"))
-ggsave(here("./Graph/Fig_11.png"), dpi=150, width=3.5, height=3.5, units='in')
+ggsave(here("./Graph/Fig_9.png"), dpi=150, width=3.5, height=3.5, units='in')
