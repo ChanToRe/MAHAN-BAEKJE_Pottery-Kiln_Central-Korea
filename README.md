@@ -16,7 +16,7 @@
 ## 파일구조
 
 ```
-📦P3K-HB_Pottery-Kiln
+📦P3K-HB_Pottery-Kiln_Central-Korea
  ┣ 📂Data
  ┃ ┣ 📜DO_in_Kiln.csv
  ┃ ┣ 📜DO_in_Settle.csv
@@ -26,32 +26,29 @@
  ┃ ┣ 📜Site_Coordinate.csv
  ┃ ┗ 📜Size_Of_Kiln.csv
  ┣ 📂Graph
+ ┃ ┣ 📜Fig_1.png
+ ┃ ┣ 📜Fig_10.png
+ ┃ ┣ 📜Fig_11.png
+ ┃ ┣ 📜Fig_15.png
+ ┃ ┣ 📜Fig_17-1.png
+ ┃ ┣ 📜Fig_17-2.png
+ ┃ ┣ 📜Fig_17-3.png
+ ┃ ┣ 📜Fig_17-4.png
+ ┃ ┣ 📜Fig_17-5.png
  ┃ ┣ 📜Fig_3-1.png
  ┃ ┣ 📜Fig_3-2.png
  ┃ ┣ 📜Fig_4.png
  ┃ ┣ 📜Fig_6.png
- ┃ ┣ 📜Fig_7.png
  ┃ ┣ 📜Fig_8.png
- ┃ ┣ 📜Fig_10.png
- ┃ ┣ 📜Fig_11.png
- ┃ ┣ 📜Fig_12.png
- ┃ ┣ 📜Fig_13.png
- ┃ ┣ 📜Fig_17.png
- ┃ ┣ 📜Fig_19-1.png
- ┃ ┣ 📜Fig_19-2.png
- ┃ ┣ 📜Fig_19-3.png
- ┃ ┣ 📜Fig_19-4.png
- ┃ ┗ 📜Fig_19-5.png
+ ┃ ┗ 📜Fig_9.png
  ┣ 📂Script
+ ┃ ┣ 📜Fig15_DoOfSettlement(All).R
+ ┃ ┣ 📜Fig17_DoOfSettlement(Area).R
  ┃ ┣ 📜Fig3_TypeOfKiln(Area).R
  ┃ ┣ 📜Fig4_SizeOfKilns(Type).R
- ┃ ┣ 📜Fig6_PotteryinKiln.R
- ┃ ┣ 📜Fig7_TypeofDOinKiln.R
- ┃ ┣ 📜Fig8_PCAOfDO.R
- ┃ ┣ 📜Fig10_SizeOfKilns(Area).R
- ┃ ┣ 📜Fig11_NumofDOKiln.R
- ┃ ┣ 📜Fig17_DoOfSettlement(All).R
- ┃ ┗ 📜Fig19_DoOfSettlement(Area).R
+ ┃ ┣ 📜Fig6_PCAOfDO.R
+ ┃ ┣ 📜Fig8_SizeOfKilns(Area).R
+ ┃ ┗ 📜Fig9_NumofDOKiln.R
  ┣ 📜.gitignore
  ┗ 📜README.md
  ```
