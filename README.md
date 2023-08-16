@@ -29,18 +29,18 @@
  ┃ ┣ 📜Fig_1.png
  ┃ ┣ 📜Fig_10.png
  ┃ ┣ 📜Fig_11.png
- ┃ ┣ 📜Fig_15.png
- ┃ ┣ 📜Fig_17-1.png
- ┃ ┣ 📜Fig_17-2.png
- ┃ ┣ 📜Fig_17-3.png
- ┃ ┣ 📜Fig_17-4.png
- ┃ ┣ 📜Fig_17-5.png
- ┃ ┣ 📜Fig_3-1.png
- ┃ ┣ 📜Fig_3-2.png
- ┃ ┣ 📜Fig_4.png
- ┃ ┣ 📜Fig_6.png
- ┃ ┣ 📜Fig_8.png
- ┃ ┗ 📜Fig_9.png
+ ┃ ┣ 📜Fig_15.tiff
+ ┃ ┣ 📜Fig_17-1.tiff
+ ┃ ┣ 📜Fig_17-2.tiff
+ ┃ ┣ 📜Fig_17-3.tiff
+ ┃ ┣ 📜Fig_17-4.tiff
+ ┃ ┣ 📜Fig_17-5.tiff
+ ┃ ┣ 📜Fig_3-1.tiff
+ ┃ ┣ 📜Fig_3-2.tiff
+ ┃ ┣ 📜Fig_4.tiff
+ ┃ ┣ 📜Fig_6.tiff
+ ┃ ┣ 📜Fig_8.tiff
+ ┃ ┗ 📜Fig_9.tiff
  ┣ 📂Script
  ┃ ┣ 📜Fig15_DoOfSettlement(All).R
  ┃ ┣ 📜Fig17_DoOfSettlement(Area).R
