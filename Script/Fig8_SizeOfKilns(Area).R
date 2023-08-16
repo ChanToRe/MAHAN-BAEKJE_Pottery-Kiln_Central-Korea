@@ -18,7 +18,7 @@ ggplot(data = df,
         shape=대옹)) +
 geom_point(size=2.5) +
 theme_bw() +
-theme(legend.position = c(0.1, 0.750),
+theme(legend.position = c(0.11, 0.750),
     legend.background = element_rect(size=0.1,
                                      colour="black"),
     legend.margin = margin(10, 20, 10, 10)) +
@@ -30,8 +30,10 @@ theme(legend.position = c(0.1, 0.750),
       theme(plot.caption = element_text(size = 12, hjust = 0),
       legend.title=element_text(size=18),
       legend.text=element_text(size=15),
-      axis.text = element_text(size=15, colour="black")
+      axis.text = element_text(size=15, colour="black"),
+      axis.title.x = element_text(size=12, colour="black", face='bold'),
+      axis.title.y = element_text(size=12, colour="black", face='bold')
       )
 
 
-ggsave(here("./Graph/Fig_8.png"), dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_8.tiff"), dpi=300, width=8, height=3, units='in')

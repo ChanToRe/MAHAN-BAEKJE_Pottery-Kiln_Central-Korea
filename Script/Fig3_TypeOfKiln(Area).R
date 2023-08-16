@@ -38,7 +38,7 @@ ggplot(A_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave(here("./Graph/Fig_3-1.png"), dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_3-1.tiff"), dpi=300, width=4, height=4, units='in')
 
 #B권역 원 그래프
 ggplot(B_pie, aes(x='', y=value, fill=Type)) +
@@ -53,4 +53,4 @@ ggplot(B_pie, aes(x='', y=value, fill=Type)) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         plot.title = element_text(vjust = -5, hjust=0.5))
-ggsave(here("./Graph/Fig_3-2.png"), dpi=150, width=4, height=4, units='in')
+ggsave(here("./Graph/Fig_3-2.tiff"), dpi=300, width=4, height=4, units='in')

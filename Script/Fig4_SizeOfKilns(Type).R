@@ -28,7 +28,9 @@ ggplot(data = df,
   theme(plot.caption = element_text(size = 12, hjust = 0),
       legend.title=element_text(size=18),
       legend.text=element_text(size=15),
-      axis.text = element_text(size=15, colour="black")
+      axis.text = element_text(size=15, colour="black"),
+      axis.title.x = element_text(size=12, colour="black", face='bold'),
+      axis.title.y = element_text(size=12, colour="black", face='bold')
       )
 
-ggsave(here("./Graph/Fig_4.png"), dpi=150, width=8, height=3, units='in')
+ggsave(here("./Graph/Fig_4.tiff"), dpi=300, width=8, height=3, units='in')

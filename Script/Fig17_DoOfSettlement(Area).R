@@ -92,10 +92,12 @@ ggplot(A_pie, aes(x=Type, y=percent, fill=Type)) +
   theme(axis.line = element_blank(),
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         axis.ticks = element_blank(),
-        plot.title = element_text(vjust = -10, hjust=0.1, size=18),
+        plot.title = element_text(vjust = -10, hjust=0.1, size=18, face='bold'),
         legend.position = "none",
-        axis.text = element_text(size=18, colour="black"))
-ggsave(here("./Graph/Fig_17-1.png"), dpi=150, width=3, height=6, units='in')
+        axis.text = element_text(size=18, colour="black", face='bold'),
+        axis.title.x = element_text(size=12, colour="black", face='bold'),
+        axis.title.y = element_text(size=12, colour="black", face='bold'))
+ggsave(here("./Graph/Fig_17-1.tiff"), dpi=300, width=3, height=6, units='in')
 
 #한강중류 막대그래프
 ggplot(B_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -110,12 +112,14 @@ ggplot(B_pie, aes(x=Type, y=percent, fill=Type)) +
   scale_fill_manual(values=Type_palette) +
   theme_bw() +
   theme(axis.line = element_blank(),
-        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
         axis.ticks = element_blank(),
-        plot.title = element_text(vjust = -10, hjust=0.1, size=18),
+        plot.title = element_text(vjust = -10, hjust=0.1, size=18, face='bold'),
         legend.position = "none",
-        axis.text = element_text(size=18, colour="black"))
-ggsave(here("./Graph/Fig_17-2.png"), dpi=150, width=3, height=6, units='in')
+        axis.text = element_text(size=18, colour="black", face='bold'),
+        axis.title.x = element_text(size=12, colour="black", face='bold'),
+        axis.title.y = element_text(size=12, colour="black", face='bold'))
+ggsave(here("./Graph/Fig_17-2.tiff"), dpi=300, width=3, height=6, units='in')
 
 #임진·한탄강+경기북부 막대그래프
 ggplot(C_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -132,10 +136,12 @@ ggplot(C_pie, aes(x=Type, y=percent, fill=Type)) +
   theme(axis.line = element_blank(),
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         axis.ticks = element_blank(),
-        plot.title = element_text(vjust = -10, hjust=0.1, size=18),
+        plot.title = element_text(vjust = -10, hjust=0.1, size=18, face='bold'),
         legend.position = "none",
-        axis.text = element_text(size=18, colour="black"))
-ggsave(here("./Graph/Fig_17-3.png"), dpi=150, width=3, height=6, units='in')
+        axis.text = element_text(size=18, colour="black", face='bold'),
+        axis.title.x = element_text(size=12, colour="black", face='bold'),
+        axis.title.y = element_text(size=12, colour="black", face='bold'))
+ggsave(here("./Graph/Fig_17-3.tiff"), dpi=300, width=3, height=6, units='in')
 
 #경기남부 막대그래프
 ggplot(D_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -152,10 +158,12 @@ ggplot(D_pie, aes(x=Type, y=percent, fill=Type)) +
   theme(axis.line = element_blank(),
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         axis.ticks = element_blank(),
-        plot.title = element_text(vjust = -10, hjust=0.1, size=18),
+        plot.title = element_text(vjust = -10, hjust=0.1, size=18, face='bold'),
         legend.position = "none",
-        axis.text = element_text(size=18, colour="black"))
-ggsave(here("./Graph/Fig_17-4.png"), dpi=150, width=3, height=6, units='in')
+        axis.text = element_text(size=18, colour="black", face='bold'),
+        axis.title.x = element_text(size=12, colour="black", face='bold'),
+        axis.title.y = element_text(size=12, colour="black", face='bold'))
+ggsave(here("./Graph/Fig_17-4.tiff"), dpi=300, width=3, height=6, units='in')
 
 #북한강·남한강 막대그래프
 ggplot(E_pie, aes(x=Type, y=percent, fill=Type)) +
@@ -172,7 +180,9 @@ ggplot(E_pie, aes(x=Type, y=percent, fill=Type)) +
   theme(axis.line = element_blank(),
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 ),
         axis.ticks = element_blank(),
-        plot.title = element_text(vjust = -10, hjust=0.1, size=18),
+        plot.title = element_text(vjust = -10, hjust=0.1, size=18, face='bold'),
         legend.position = "none",
-        axis.text = element_text(size=18, colour="black"))
-ggsave(here("/Graph/Fig_17-5.png"), dpi=200, width=3, height=6, units='in')
+        axis.text = element_text(size=18, colour="black", face='bold'),
+        axis.title.x = element_text(size=12, colour="black", face='bold'),
+        axis.title.y = element_text(size=12, colour="black", face='bold'))
+ggsave(here("./Graph/Fig_17-5.tiff"), dpi=300, width=3, height=6, units='in')

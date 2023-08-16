@@ -55,9 +55,13 @@ ggbiplot(prcomp_df,
   scale_color_discrete(name = '') +
   geom_point(aes(shape=df_category), size=3) +
   scale_shape_manual(values=c(15, 16, 17)) +
-  theme(legend.title = element_blank(),
-        legend.position = c(0.12, 0.85),
+  theme(legend.position = c(0.12, 0.85),
         legend.background = element_rect(size=0.1, colour="black"),
-        legend.margin = margin(10, 20, 10, 10))
+        legend.margin = margin(5, 10, 5, 5),
+        legend.title=element_blank(),
+        legend.text=element_text(size=9),
+        axis.text = element_text(size=9, colour="black"),
+        axis.title.x = element_text(size=9, colour="black", face='bold'),
+        axis.title.y = element_text(size=9, colour="black", face='bold'))
 
-ggsave(here("./Graph/Fig_6.png"), dpi=150, width=6, height=6, units='in')
+ggsave(here("./Graph/Fig_6.tiff"), dpi=300, width=5, height=5, units='in')
