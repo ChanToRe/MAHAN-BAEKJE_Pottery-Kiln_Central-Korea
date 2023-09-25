@@ -7,7 +7,7 @@
 ## 소개
 이 레포지토리는 제20회 매산기념강좌에서 발표된 ｢중부지역 마한・백제 대옹 소성 가마의 생산과 유통｣의 데이터, 그래프, 코드를 정리한 레포지토리입니다. 해당 논문은 아래에서 확인하실 수 있습니다.
 
-[윤예주・주찬혁, 2023, ｢중부지역 마한・백제 대옹 소성 가마의 생산과 유통｣, 『제20회 매산기념강좌 발표문』, 숭실대학교 한국기독교박물관.]()
+[윤예주・주찬혁, 2023, ｢중부지역 마한・백제 대옹 소성 가마의 생산과 유통｣, 『제20회 매산기념강좌 자료집』, 숭실대학교 한국기독교박물관.]()
 
 레포지토리는 3개의 디렉토리로 구성되어 있습니다. `Data`에는 연구에 사용된 데이터가 있고, `Script`에는 분석 및 그래프 산출을 위한 R코드가 있으며, `Graph`에는 최종적으로 산출된 도면이 있습니다.
 
@@ -16,7 +16,7 @@
 ## 파일구조
 
 ```
-📦P3K-HB_Pottery-Kiln_Central-Korea
+📦MAHAN-BAEKJE_Pottery-Kiln_Central-Korea
  ┣ 📂Data
  ┃ ┣ 📜DO_in_Kiln.csv
  ┃ ┣ 📜DO_in_Settle.csv
@@ -26,9 +26,11 @@
  ┃ ┣ 📜Site_Coordinate.csv
  ┃ ┗ 📜Size_Of_Kiln.csv
  ┣ 📂Graph
- ┃ ┣ 📜Fig_1.png
- ┃ ┣ 📜Fig_10.png
+ ┃ ┣ 📜Fig_1.tif
+ ┃ ┣ 📜Fig_10.tiff
  ┃ ┣ 📜Fig_11.png
+ ┃ ┣ 📜Fig_12.tif
+ ┃ ┣ 📜Fig_13.tif
  ┃ ┣ 📜Fig_15.tiff
  ┃ ┣ 📜Fig_17-1.tiff
  ┃ ┣ 📜Fig_17-2.tiff
@@ -38,9 +40,11 @@
  ┃ ┣ 📜Fig_3-1.tiff
  ┃ ┣ 📜Fig_3-2.tiff
  ┃ ┣ 📜Fig_4.tiff
+ ┃ ┣ 📜FIg_5.tif
  ┃ ┣ 📜Fig_6.tiff
+ ┃ ┣ 📜Fig_7.tif
  ┃ ┣ 📜Fig_8.tiff
- ┃ ┗ 📜Fig_9.tiff
+ ┃ ┗ 📜Fig_9.tif
  ┣ 📂Script
  ┃ ┣ 📜Fig15_DoOfSettlement(All).R
  ┃ ┣ 📜Fig17_DoOfSettlement(Area).R
