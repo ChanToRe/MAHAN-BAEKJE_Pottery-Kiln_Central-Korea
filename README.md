@@ -1,4 +1,4 @@
-<img src="[https://user-images.githubusercontent.com/64909586/186408061-58a88e85-be08-47f2-b3b3-2c9e04a9dec6.png](https://github.com/user-attachments/assets/b2260acf-e144-4d41-a786-e73cce6d226a)" height=65>
+<img src="https://github.com/user-attachments/assets/b2260acf-e144-4d41-a786-e73cce6d226a" height=65>
 
 # 중부지역 원삼국~ 한성기 백제 대옹의 생산과 유통
 
